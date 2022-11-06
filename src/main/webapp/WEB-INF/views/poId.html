@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User по ID</title>
+</head>
+<body>
+<h1>Карточка пользователя:</h1>
+<p th:text="|ID:  ${user.getId()}|">id</p>
+<p th:text="|Имя:  ${user.getName()}|">name</p>
+<p th:text="|Возраст:  ${user.getAge()}|">age</p>
+<p th:text="|Адрес электронной почты:  ${user.getEmail()}|">email</p>
+<br/>
+<a href="/users">Назад к списку</a>
+</body>
+</html>
